@@ -112,7 +112,19 @@ a {
     position: absolute;
     font-size: 80px;
     transform: translate3d(-50%, -50%, 0);
-    color: #fff;
+    -webkit-transform: translate3d(-50%, -50%,0);
+    
+    /*-ms-transform: translateY(-30%);
+    -webkit-transform: translateY(-30%);
+    -moz-transform: translateY(-30%);
+    -o-transform: translateY(-30%);
+    transform: translateY(-30%);*/
+    /*-ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+*/    color: #fff;
     text-align: center
 }
 .hero .developer {
