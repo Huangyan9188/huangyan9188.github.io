@@ -1,51 +1,14 @@
+<html class=" -webkit-"><head><meta charset="UTF-8"><meta name="robots" content="noindex">
 
-<html>
-<head>
-	<title>H-Young's Portfolio</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href='css/fonts.css' rel='stylesheet' type='text/css'>
-
-	<link rel="stylesheet" type="text/css" href="css/animate.css">
-	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="css/beach.css">
-
-	<script src="js/jquery.min.js" ></script>
-	<script src="js/script.js" ></script>
-	<style>
-		@font-face {
-		  font-family: 'Blazed';
-		  src: local("Helvetica Neue Bold"),
-		       local("HelveticaNeue-Bold"),
-		       url(fonts/Blazed.ttf);
-		  font-weight: bold;
-		}
-		@font-face {
-		  font-family: 'Writters';
-		  src: local("Helvetica Neue Bold"),
-		       local("HelveticaNeue-Bold"),
-		       url(fonts/writer_original.ttf);
-		  font-weight: bold;
-		}
-	</style>
-	<style class="cp-pen-styles">
+<style class="cp-pen-styles">
 html, body {
   /*font-family: "Lato", sans-serif;*/
-  background: #13242f;
+  /*background: #13242f;*/
   overflow: hidden;
 }
 
-.sketch{
-  position: absolute;
-  z-index: 0;
-  opacity: 0.7;
-  height: 100%;
-  width: 100%;
-  left: 0;
-  top: 0;
 
 
-}
 
 audio {
   position: absolute;
@@ -54,133 +17,38 @@ audio {
   top: 0;
   display: none;
 }
-.main{
-    z-index: 3;
-}
-</style>
-</head>
 
-<body class="dark">
-	<div class="nav-wrapper left-top hide">
-		<div class="triangle"></div>
-		<div class="label">
-			<img src="images/skills.png"/>
-		</div>
-		<div class="nav-content">
-			<ul class="skills">
-				<li class="hide">
-					<h5>LANGUAGES/FRAMEWORKS</h5>
-					Golang,Docker,C/C++,JavaScript, HTML5, CSS3, Vuejs, Revel,NSQ <br/>BackboneJS, Marionette, NodeJS, LESS, SASS,<br/>D3.js, RequireJS, Gulp, Jasmine, C#.NET, Swift,<br/>iOS, MongoDB, MySQL, SQL Server, Git, bash
-				</li>
-				<li class="hide">
-					<h5>CONCEPTS</h5>
-					Microservice Architecture, OOP, TDD, <br/>Responsive Web Design/Development,<br/>
-					Design Patterns
-				</li>
-				<!-- <li class="hide">
-					<h5>DESIGN</h5>
-					UI/UX, Adobe Suite, <br/>OmniGraffle
-				</li> -->
-			</ul>
-		</div>
-	</div>
-	
-	<div class="nav-wrapper right-top hide">
-		<div class="triangle"></div>
-		<div class="label"><img src="images/contact.png"/></div>
-		<div class="nav-content contact">
-			<ul>
-				<li class="hide"><a href="https://github.com/huangyan9188" target="_blank"><img src="images/github.png"/></a></li>
-				<li class="hide"><a href="https://www.linkedin.com/in/" target="_blank"><img src="images/linkedin.png"/></a></li>
-				<li class="hide"><a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png"/></a></li>
-				<li class="hide"><a href="https://instagram.com/" target="_blank"><img src="images/instegram.png"/></a></li>
-			</ul>
-		</div>
-	</div>
-
-	<div class="nav-wrapper left-bottom hide">
-		<div class="triangle"></div>
-		<div class="label"><img src="images/about.png"/></div>
-		<div class="nav-content">
-			<div class="about">
-				<ul>
-					<li class="hide">Hi! My name is H-Young</li>
-					<li class="hide">I am a senior full stack<br/>software engineer based in Beijing</li>
-					<li class="hide">I have a passion for solving <br/>complex problems by devising <br/>innovative and creative solutions</li>
-					<li class="hide">When I am not programming I love<br/> dancing and playing the rap</li>
-					<!-- <li class="hide">
-						<a href="resume.pdf" download>
-							Click here to download my resume 
-						</a><br/>
-						and be sure to check out some of the fun<br/>projects below!
-						
-					</li>
- -->				</ul>
-			</div>
-		</div>
-		<div class="close"></div>
-	</div>
-	
-	<div class="nav-wrapper right-bottom hide">
-		<div class="triangle"></div>
-		<div class="label"><img src="images/work.png"/></div>
-		<div class="nav-content projects">
-			<div class="projects">
-				<ul>
-					<li class="hide ninebox" data-project="ninebox">
-						<img src="images/ninebox.png"/>
-					</li>
-					<li class="hide ignitor" data-project="ignitor">
-						<img src="images/ignitor.png"/>
-					</li>
-					<li class="hide workflow" data-project="workflow">
-						<img src="images/workflow.png"/>
-					</li>
-					<li class="hide room" data-project="room">
-						<img src="images/scheduler.png"/>
-					</li>
-					<li class="hide wingit" data-project="wingit">
-						<img src="images/wingit.png"/>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<div class="close"></div>
-	</div>
-	<!-- <div id="container"></div>
- -->	<div class="main"  id="container" style="overflow: hidden;">
-
-		<!-- <div class="another-div"></div>
-		<div class="another-div one"></div> -->
-
-		<div class="overlay"></div>
-
-		<div class="my-name">H-Young<br/>huangyan9188@gmail.com<br/></div>
-		<div class="my-pic hide"></div>
-
-		<div class="hero">
-			<div class="creative">
-			 	Hey,I am H-Young
-			</div>
-			<div class="developer">
-				developer
-			</div>
-		</div>
-
-		<div class="code">
-		</div>
-
-		<!-- <img src="images/arrow.png" class="hvr-bob arrow-down hidden"/> -->
-	</div>
-	<script src="http://assets.codepen.io/assets/common/stopExecutionOnTimeout.js?t=1"></script><script src="http://soulwire.github.io/sketch.js/js/sketch.min.js"></script>
-	<script>
+</style><body>
+<div id="container"></div>
+<!-- <div class="message" id="warning1">
+  <h1>
+    This experiment requires the
+    <a href="https://dvcs.w3.org/hg/audio/raw-file/tip/webaudio/specification.html" target="_blank">Web Audio API</a>
+  </h1>
+  <h2>
+    Please try in one of
+    <a href="http://caniuse.com/#feat=audio-api" target="_blank">these browsers</a>
+  </h2>
+</div> -->
+<!-- <div class="message" id="warning2">
+  <h1>
+    Safari users. You may hear audio but see no visuals. This is due to
+    <a href="http://goo.gl/6WLx1" target="_blank">this bug</a>
+    in Safari 6
+  </h1>
+</div> -->
+<!-- <div class="message" id="intro" style="display: none;">
+  <h1>Simple music visualiser</h1>
+  <h2>Loading audio…</h2>
+</div> -->
+<script src="http://assets.codepen.io/assets/common/stopExecutionOnTimeout.js?t=1"></script><script src="http://soulwire.github.io/sketch.js/js/sketch.min.js"></script>
+<script>
 (function () {
     var ALPHA, AudioAnalyser, COLORS, MP3_PATH, NUM_BANDS, NUM_PARTICLES, Particle, SCALE, SIZE, SMOOTHING, SPEED, SPIN;
     NUM_PARTICLES = 150;
     NUM_BANDS = 128;
     SMOOTHING = 0.5;
-    //MP3_PATH = 'http://crossorigin.me/https://s3-us-west-2.amazonaws.com/s.cdpn.io/1715/the_xx_-_intro.mp3';
-    MP3_PATH='http://kolber.github.io/audiojs/demos/mp3/juicy.mp3';
+    MP3_PATH = 'http://crossorigin.me/https://s3-us-west-2.amazonaws.com/s.cdpn.io/1715/the_xx_-_intro.mp3';
     SCALE = {
         MIN: 5,
         MAX: 80
@@ -385,71 +253,11 @@ audio {
     });
 }.call(this));
 //# sourceURL=pen.js
-</script><canvas id="paint-canvas" class=" sketch" height="588" width="800"></canvas><audio preload="auto" crossorigin="anonymous" controls="" src="" ></audio>
-</body>
+</script><canvas class=" sketch" height="588" width="800"></canvas><audio preload="auto" crossorigin="anonymous" controls="" src="" ></audio>
+<style>
+  audio{
+    display: none;
+  }
+</style>
 
-<script>
-// 	$(function(){
-
-// var colors = new Array(
-//   [62,35,255],
-//   [60,255,60],
-//   [255,35,98],
-//   [45,175,230],
-//   [255,0,255],
-//   [255,128,0]);
-
-// var step = 0;
-// //color table indices for: 
-// // current color left
-// // next color left
-// // current color right
-// // next color right
-// var colorIndices = [0,1,2,3];
-
-// //transition speed
-// var gradientSpeed = 0.002;
-
-// function updateGradient()
-// {
-//   //console.log()
-//   if ( $===undefined ) return;
-  
-// var c0_0 = colors[colorIndices[0]];
-// var c0_1 = colors[colorIndices[1]];
-// var c1_0 = colors[colorIndices[2]];
-// var c1_1 = colors[colorIndices[3]];
-
-// var istep = 1 - step;
-// var r1 = Math.round(istep * c0_0[0] + step * c0_1[0]);
-// var g1 = Math.round(istep * c0_0[1] + step * c0_1[1]);
-// var b1 = Math.round(istep * c0_0[2] + step * c0_1[2]);
-// var color1 = "rgb("+r1+","+g1+","+b1+")";
-
-// var r2 = Math.round(istep * c1_0[0] + step * c1_1[0]);
-// var g2 = Math.round(istep * c1_0[1] + step * c1_1[1]);
-// var b2 = Math.round(istep * c1_0[2] + step * c1_1[2]);
-// var color2 = "rgb("+r2+","+g2+","+b2+")";
-
-//  $('.main').css({
-//    background: "-webkit-gradient(linear, left top, right bottom, from("+color1+"), to("+color2+"))"}).css({
-//     background: "-moz-linear-gradient(left, "+color1+" 0%, "+color2+" 100%)"});
-  
-//   step += gradientSpeed;
-//   if ( step >= 1 )
-//   {
-//     step %= 1;
-//     colorIndices[0] = colorIndices[1];
-//     colorIndices[2] = colorIndices[3];
-    
-//     //pick two new target color indices
-//     //do not pick the same as the current one
-//     colorIndices[1] = ( colorIndices[1] + Math.floor( 1 + Math.random() * (colors.length - 1))) % colors.length;
-//     colorIndices[3] = ( colorIndices[3] + Math.floor( 1 + Math.random() * (colors.length - 1))) % colors.length;
-    
-//   }
-// }
-// console.log('here')
-// setInterval(updateGradient,10);
-// 	});
-</script>
+</body></html>
