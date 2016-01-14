@@ -215,7 +215,8 @@ audio {
         '#FF006F'
     ];
     AudioAnalyser = function () {
-        AudioAnalyser.AudioContext = self.AudioContext || self.webkitAudioContext;
+        AudioAnalyser.AudioContext =window.AudioContext // Default
+    || window.webkitAudioContext;
         AudioAnalyser.enabled = AudioAnalyser.AudioContext != null;
         function AudioAnalyser(audio, numBands, smoothing) {
             var src;
