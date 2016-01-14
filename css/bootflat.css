@@ -10333,6 +10333,7 @@ a.list-group-item-danger:hover {
 
 .timeline dl dd .events .events-body .events-heading {
     margin: 0 0 10px;
+    margin-left: 30px;
     font-size: 14px
 }
 

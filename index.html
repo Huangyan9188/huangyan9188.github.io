@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -53,12 +54,27 @@
     .main {
         z-index: 3;
     }
-    .pos-left .events-body{
+    
+    @media (min-width: 771) {
+        .pos-left .events-body{
         text-align: right;
+        }
+        .pos-right .events-body{
+            text-align: left;
+        }
+    }
+    @media (max-width: 770) {
+    .pos-left .events-body{
+        text-align: left;
     }
     .pos-right .events-body{
         text-align: left;
     }
+    .timeline dl dd .events .events-body .events-heading{
+        margin-left: 30px;
+    }
+
+}
     </style>
 </head>
 
