@@ -1,396 +1,471 @@
-
 <html>
+
 <head>
-	<title>H-Young's Portfolio</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href='css/fonts.css' rel='stylesheet' type='text/css'>
-
-	<link rel="stylesheet" type="text/css" href="css/animate.css">
-	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="css/beach.css">
-
-	<script src="js/jquery.min.js" ></script>
-	<script src="js/script.js" ></script>
-	<style>
-		@font-face {
-		  font-family: 'Blazed';
-		  src: local("Helvetica Neue Bold"),
-		       local("HelveticaNeue-Bold"),
-		       url(fonts/Blazed.ttf);
-		  font-weight: bold;
-		}
-		@font-face {
-		  font-family: 'Writters';
-		  src: local("Helvetica Neue Bold"),
-		       local("HelveticaNeue-Bold"),
-		       url(fonts/writer_original.ttf);
-		  font-weight: bold;
-		}
-	</style>
-	<style class="cp-pen-styles">
-html, body {
-  /*font-family: "Lato", sans-serif;*/
-  background: #13242f;
-  overflow: hidden;
-}
-
-.sketch{
-  position: absolute;
-  z-index: 0;
-  opacity: 0.7;
-  height: 100%;
-  width: 100%;
-  left: 0;
-  top: 0;
-
-
-}
-
-audio {
-  position: absolute;
-  z-index: 2;
-  right: 0;
-  top: 0;
-  display: none;
-}
-.main{
-    z-index: 3;
-}
-</style>
+    <title>H-Young's Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='css/fonts.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/beach.css">
+    <link rel="stylesheet" type="text/css" href="css/bootflat.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <style>
+    @font-face {
+        font-family: 'Blazed';
+        src: local("Helvetica Neue Bold"), local("HelveticaNeue-Bold"), url(fonts/Blazed.ttf);
+        font-weight: bold;
+    }
+    
+    @font-face {
+        font-family: 'Writters';
+        src: local("Helvetica Neue Bold"), local("HelveticaNeue-Bold"), url(fonts/writer_original.ttf);
+        font-weight: bold;
+    }
+    </style>
+    <style class="cp-pen-styles">
+    html,
+    body {
+        /*font-family: "Lato", sans-serif;*/
+        background: #13242f;
+        overflow: hidden;
+    }
+    
+    .sketch {
+        position: absolute;
+        z-index: 0;
+        opacity: 0.7;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+    }
+    
+    audio {
+        position: absolute;
+        z-index: 2;
+        right: 0;
+        top: 0;
+        display: none;
+    }
+    
+    .main {
+        z-index: 3;
+    }
+    .pos-left .events-body{
+        text-align: right;
+    }
+    .pos-right .events-body{
+        text-align: left;
+    }
+    </style>
 </head>
 
 <body class="dark">
-	<div class="nav-wrapper left-top hide">
-		<div class="triangle"></div>
-		<div class="label">
-			<img src="images/skills.png"/>
-		</div>
-		<div class="nav-content">
-			<ul class="skills">
-				<li class="hide">
-					<h5>LANGUAGES/FRAMEWORKS</h5>
-					Golang,Docker,C/C++,JavaScript, HTML5, CSS3, Vuejs, Revel,NSQ <br/>BackboneJS, Marionette, NodeJS, LESS, SASS,<br/>D3.js, RequireJS, Gulp, Jasmine, C#.NET, Swift,<br/>iOS, MongoDB, MySQL, SQL Server, Git, bash
-				</li>
-				<li class="hide">
-					<h5>CONCEPTS</h5>
-					Microservice Architecture, OOP, TDD, <br/>Responsive Web Design/Development,<br/>
-					Design Patterns
-				</li>
-				<!-- <li class="hide">
-					<h5>DESIGN</h5>
-					UI/UX, Adobe Suite, <br/>OmniGraffle
-				</li> -->
-			</ul>
-		</div>
-	</div>
-	
-	<div class="nav-wrapper right-top hide">
-		<div class="triangle"></div>
-		<div class="label"><img src="images/contact.png"/></div>
-		<div class="nav-content contact">
-			<ul>
-				<li class="hide"><a href="https://github.com/huangyan9188" target="_blank"><img src="images/github.png"/></a></li>
-				<li class="hide"><a href="https://www.linkedin.com/in/" target="_blank"><img src="images/linkedin.png"/></a></li>
-				<li class="hide"><a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png"/></a></li>
-				<li class="hide"><a href="https://instagram.com/" target="_blank"><img src="images/instegram.png"/></a></li>
-			</ul>
-		</div>
-	</div>
-
-	<div class="nav-wrapper left-bottom hide">
-		<div class="triangle"></div>
-		<div class="label"><img src="images/about.png"/></div>
-		<div class="nav-content">
-			<div class="about">
-				<ul>
-					<li class="hide">Hi! My name is H-Young</li>
-					<li class="hide">I am a senior full stack<br/>software engineer based in Beijing</li>
-					<li class="hide">I have a passion for solving <br/>complex problems by devising <br/>innovative and creative solutions</li>
-					<li class="hide">When I am not programming I love<br/> dancing and playing the rap</li>
-					<!-- <li class="hide">
-						<a href="resume.pdf" download>
-							Click here to download my resume 
-						</a><br/>
-						and be sure to check out some of the fun<br/>projects below!
-						
-					</li>
- -->				</ul>
-			</div>
-		</div>
-		<div class="close"></div>
-	</div>
-	
-	<div class="nav-wrapper right-bottom hide">
-		<div class="triangle"></div>
-		<div class="label"><img src="images/work.png"/></div>
-		<div class="nav-content projects">
-			<div class="projects">
-				<ul>
-					<li class="hide ninebox" data-project="ninebox">
-						<img src="images/ninebox.png"/>
-					</li>
-					<li class="hide ignitor" data-project="ignitor">
-						<img src="images/ignitor.png"/>
-					</li>
-					<li class="hide workflow" data-project="workflow">
-						<img src="images/workflow.png"/>
-					</li>
-					<li class="hide room" data-project="room">
-						<img src="images/scheduler.png"/>
-					</li>
-					<li class="hide wingit" data-project="wingit">
-						<img src="images/wingit.png"/>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<div class="close"></div>
-	</div>
-	<!-- <div id="container"></div>
- -->	<div class="main"  id="container" style="overflow: hidden;">
-
-		<!-- <div class="another-div"></div>
-		<div class="another-div one"></div> -->
-
-		<div class="overlay"></div>
-
-		<!-- <div class="my-name">H-Young<br/>huangyan9188@gmail.com<br/></div> -->
-		<div class="my-pic hide"></div>
-
-		<div class="hero">
-			<div class="creative">
-			 	Hey,I am H-Young
-			</div>
-			<div class="developer">
-				developer
-			</div>
-		</div>
-
-		<div class="code">
-		</div>
-
-		<!-- <img src="images/arrow.png" class="hvr-bob arrow-down hidden"/> -->
-	</div>
-	<script src="http://assets.codepen.io/assets/common/stopExecutionOnTimeout.js?t=1"></script><script src="http://soulwire.github.io/sketch.js/js/sketch.min.js"></script>
-	<script>
-(function () {
-    var ALPHA, AudioAnalyser, COLORS, MP3_PATH, NUM_BANDS, NUM_PARTICLES, Particle, SCALE, SIZE, SMOOTHING, SPEED, SPIN;
-    NUM_PARTICLES = 150;
-    NUM_BANDS = 128;
-    SMOOTHING = 0.5;
-    //MP3_PATH = 'http://crossorigin.me/https://s3-us-west-2.amazonaws.com/s.cdpn.io/1715/the_xx_-_intro.mp3';
-    MP3_PATH='http://kolber.github.io/audiojs/demos/mp3/juicy.mp3';
-    SCALE = {
-        MIN: 5,
-        MAX: 80
-    };
-    SPEED = {
-        MIN: 0.2,
-        MAX: 1
-    };
-    ALPHA = {
-        MIN: 0.8,
-        MAX: 0.9
-    };
-    SPIN = {
-        MIN: 0.001,
-        MAX: 0.005
-    };
-    SIZE = {
-        MIN: 0.5,
-        MAX: 1.25
-    };
-    COLORS = [
-        '#69D2E7',
-        '#1B676B',
-        '#BEF202',
-        '#EBE54D',
-        '#00CDAC',
-        '#1693A5',
-        '#F9D423',
-        '#FF4E50',
-        '#E7204E',
-        '#0CCABA',
-        '#FF006F'
-    ];
-    AudioAnalyser = function () {
-        AudioAnalyser.AudioContext =window.AudioContext // Default
-    || window.webkitAudioContext;
-        AudioAnalyser.enabled = AudioAnalyser.AudioContext != null;
-        function AudioAnalyser(audio, numBands, smoothing) {
-            var src;
-            this.audio = audio != null ? audio : new Audio();
-            this.numBands = numBands != null ? numBands : 256;
-            this.smoothing = smoothing != null ? smoothing : 0.3;
-            if (typeof this.audio === 'string') {
-                src = this.audio;
-                this.audio = new Audio();
-                this.audio.crossOrigin = 'anonymous';
-                this.audio.controls = true;
-                this.audio.src = src;
-            }
-            this.context = new AudioAnalyser.AudioContext();
-            this.jsNode = this.context.createScriptProcessor(2048, 1, 1);
-            this.analyser = this.context.createAnalyser();
-            this.analyser.smoothingTimeConstant = this.smoothing;
-            this.analyser.fftSize = this.numBands * 2;
-            this.bands = new Uint8Array(this.analyser.frequencyBinCount);
-            this.audio.addEventListener('canplay', function (_this) {
-                return function () {
-                    _this.source = _this.context.createMediaElementSource(_this.audio);
-                    _this.source.connect(_this.analyser);
-                    _this.analyser.connect(_this.jsNode);
-                    _this.jsNode.connect(_this.context.destination);
-                    _this.source.connect(_this.context.destination);
-                    return _this.jsNode.onaudioprocess = function () {
-                        _this.analyser.getByteFrequencyData(_this.bands);
-                        if (!_this.audio.paused) {
-                            return typeof _this.onUpdate === 'function' ? _this.onUpdate(_this.bands) : void 0;
-                        }
-                    };
-                };
-            }(this));
-        }
-        AudioAnalyser.prototype.start = function () {
-            return this.audio.play();
+    <div class="nav-wrapper left-top hide">
+        <div class="triangle"></div>
+        <div class="label">
+            <img src="images/skills.png" />
+        </div>
+        <div class="nav-content">
+            <ul class="skills">
+                <li class="hide">
+                    <h5>LANGUAGES/FRAMEWORKS</h5> Golang,Docker,C/C++,JavaScript, HTML5, CSS3, Vuejs, Revel,NSQ
+                    <br/>BackboneJS, Marionette, NodeJS, LESS, SASS,
+                    <br/>D3.js, RequireJS, Gulp, Jasmine, C#.NET, Swift,
+                    <br/>iOS, MongoDB, MySQL, SQL Server, Git, bash
+                </li>
+                <li class="hide">
+                    <h5>CONCEPTS</h5> Microservice Architecture, OOP, TDD,
+                    <br/>Responsive Web Design/Development,
+                    <br/> Design Patterns
+                </li>
+                <!-- <li class="hide">
+                    <h5>DESIGN</h5>
+                    UI/UX, Adobe Suite, <br/>OmniGraffle
+                </li> -->
+            </ul>
+        </div>
+    </div>
+    <div class="nav-wrapper right-top hide">
+        <div class="triangle"></div>
+        <div class="label"><img src="images/contact.png" /></div>
+        <div class="nav-content contact">
+            <ul>
+                <li class="hide">
+                    <a href="https://github.com/huangyan9188" target="_blank"><img src="images/github.png" /></a>
+                </li>
+                <li class="hide">
+                    <a href="https://www.linkedin.com/in/" target="_blank"><img src="images/linkedin.png" /></a>
+                </li>
+                <li class="hide">
+                    <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" /></a>
+                </li>
+                <li class="hide">
+                    <a href="https://instagram.com/" target="_blank"><img src="images/instegram.png" /></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="nav-wrapper left-bottom hide">
+        <div class="triangle"></div>
+        <div class="label"><img src="images/about.png" /></div>
+        <div class="nav-content">
+            <div class="about">
+                <ul>
+                    <li class="hide">Hi! My name is H-Young</li>
+                    <li class="hide">I am a senior full stack
+                        <br/>software engineer based in Beijing</li>
+                    <li class="hide">I have a passion for solving
+                        <br/>complex problems by devising
+                        <br/>innovative and creative solutions</li>
+                    <li class="hide">When I am not programming I love
+                        <br/> dancing and playing the rap</li>
+                    <!-- <li class="hide">
+                        <a href="resume.pdf" download>
+                            Click here to download my resume 
+                        </a><br/>
+                        and be sure to check out some of the fun<br/>projects below!
+                        
+                    </li>
+ -->
+                </ul>
+            </div>
+        </div>
+        <div class="close"></div>
+    </div>
+    <!-- <div class="nav-wrapper right-bottom hide">
+        <div class="triangle"></div>
+        <div class="label"><img src="images/work.png" /></div>
+        <div class="nav-content projects">
+            <div class="projects">
+                <ul>
+                    <li class="hide ninebox" data-project="ninebox">
+                        <img src="images/ninebox.png" />
+                    </li>
+                    <li class="hide ignitor" data-project="ignitor">
+                        <img src="images/ignitor.png" />
+                    </li>
+                    <li class="hide workflow" data-project="workflow">
+                        <img src="images/workflow.png" />
+                    </li>
+                    <li class="hide room" data-project="room">
+                        <img src="images/scheduler.png" />
+                    </li>
+                    <li class="hide wingit" data-project="wingit">
+                        <img src="images/wingit.png" />
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="close"></div>
+    </div> -->
+    <!-- <div id="container"></div>
+ -->
+    <div class="main" id="container" style="overflow: hidden;">
+        <!-- <div class="another-div"></div>
+        <div class="another-div one"></div> -->
+        <div class="overlay"></div>
+        <!-- <div class="my-name">H-Young<br/>huangyan9188@gmail.com<br/></div> -->
+        <div class="my-pic hide"></div>
+        <div class="hero">
+            <div class="creative">
+                Hey,I am H-Young
+            </div>
+            <div class="developer">
+                developer
+            </div>
+        </div>
+        <div class="code">
+        </div>
+        <!-- <img src="images/arrow.png" class="hvr-bob arrow-down hidden"/> -->
+    </div>
+    <div class="dark work">
+        <h1>Timeline</h1>
+        <div class="col-md-12">
+            <div class="timeline">
+                <dl>
+                    <!-- <dt>Apr 2014</dt> -->
+                    <dd class="pos-right clearfix">
+                        <div class="circ"></div>
+                        <!-- <div class="time">Apr 14</div> -->
+                        <div class="events">
+                            <div class="pull-left">
+<!--                                 <img class="events-object img-rounded" src="img/photo-1.jpg"> -->
+                            </div>
+                            <div class="events-body">
+                                <h4 class="events-heading">Bootstrap</h4>
+                                <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica.</p>
+                            </div>
+                        </div>
+                    </dd>
+                    <dd class="pos-left clearfix">
+                        <div class="circ"></div>
+                        <!-- <div class="time">Apr 10</div> -->
+                        <div class="events">
+                            <div class="pull-left">
+                                <!-- <img class="events-object img-rounded" src="img/photo-2.jpg"> -->
+                            </div>
+                            <div class="events-body">
+                                <h4 class="events-heading">Bootflat</h4>
+                                <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica.</p>
+                            </div>
+                        </div>
+                    </dd>
+                    <!-- <dt>Mar 2014</dt> -->
+                    <dd class="pos-right clearfix">
+                        <div class="circ"></div>
+                        <!-- <div class="time">Mar 15</div> -->
+                        <div class="events">
+                            <div class="pull-left">
+                                <!-- <img class="events-object img-rounded" src="img/photo-3.jpg"> -->
+                            </div>
+                            <div class="events-body">
+                                <h4 class="events-heading">Flat UI</h4>
+                                <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica.</p>
+                            </div>
+                        </div>
+                    </dd>
+                    <dd class="pos-left clearfix">
+                        <div class="circ"></div>
+                        <!-- <div class="time">Mar 8</div> -->
+                        <div class="events">
+                            <div class="pull-left">
+                                <!-- <img class="events-object img-rounded" src="img/photo-4.jpg"> -->
+                            </div>
+                            <div class="events-body">
+                                <h4 class="events-heading">UI design</h4>
+                                <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica.</p>
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <script src="http://assets.codepen.io/assets/common/stopExecutionOnTimeout.js?t=1"></script>
+    <script src="http://soulwire.github.io/sketch.js/js/sketch.min.js"></script>
+    <script>
+    (function() {
+        var ALPHA, AudioAnalyser, COLORS, MP3_PATH, NUM_BANDS, NUM_PARTICLES, Particle, SCALE, SIZE, SMOOTHING, SPEED, SPIN;
+        NUM_PARTICLES = 150;
+        NUM_BANDS = 128;
+        SMOOTHING = 0.5;
+        //MP3_PATH = 'http://crossorigin.me/https://s3-us-west-2.amazonaws.com/s.cdpn.io/1715/the_xx_-_intro.mp3';
+        MP3_PATH = 'http://kolber.github.io/audiojs/demos/mp3/juicy.mp3';
+        SCALE = {
+            MIN: 5,
+            MAX: 80
         };
-        AudioAnalyser.prototype.stop = function () {
-            return this.audio.pause();
+        SPEED = {
+            MIN: 0.2,
+            MAX: 1
         };
-        return AudioAnalyser;
-    }();
-    Particle = function () {
-        function Particle(x1, y1) {
-            this.x = x1 != null ? x1 : 0;
-            this.y = y1 != null ? y1 : 0;
-            this.reset();
-        }
-        Particle.prototype.reset = function () {
-            this.level = 1 + floor(random(4));
-            this.scale = random(SCALE.MIN, SCALE.MAX);
-            this.alpha = random(ALPHA.MIN, ALPHA.MAX);
-            this.speed = random(SPEED.MIN, SPEED.MAX);
-            this.color = random(COLORS);
-            this.size = random(SIZE.MIN, SIZE.MAX);
-            this.spin = random(SPIN.MAX, SPIN.MAX);
-            this.band = floor(random(NUM_BANDS));
-            if (random() < 0.5) {
-                this.spin = -this.spin;
-            }
-            this.smoothedScale = 0;
-            this.smoothedAlpha = 0;
-            this.decayScale = 0;
-            this.decayAlpha = 0;
-            this.rotation = random(TWO_PI);
-            return this.energy = 0;
+        ALPHA = {
+            MIN: 0.8,
+            MAX: 0.9
         };
-        Particle.prototype.move = function () {
-            this.rotation += this.spin;
-            return this.y -= this.speed * this.level;
+        SPIN = {
+            MIN: 0.001,
+            MAX: 0.005
         };
-        Particle.prototype.draw = function (ctx) {
-            var alpha, power, scale;
-            power = exp(this.energy);
-            scale = this.scale * power;
-            alpha = this.alpha * this.energy * 1.5;
-            this.decayScale = max(this.decayScale, scale);
-            this.decayAlpha = max(this.decayAlpha, alpha);
-            this.smoothedScale += (this.decayScale - this.smoothedScale) * 0.3;
-            this.smoothedAlpha += (this.decayAlpha - this.smoothedAlpha) * 0.3;
-            this.decayScale *= 0.985;
-            this.decayAlpha *= 0.975;
-            ctx.save();
-            ctx.beginPath();
-            ctx.translate(this.x + cos(this.rotation * this.speed) * 250, this.y);
-            ctx.rotate(this.rotation);
-            ctx.scale(this.smoothedScale * this.level, this.smoothedScale * this.level);
-            ctx.moveTo(this.size * 0.5, 0);
-            ctx.lineTo(this.size * -0.5, 0);
-            ctx.lineWidth = 1;
-            ctx.lineCap = 'round';
-            ctx.globalAlpha = this.smoothedAlpha / this.level;
-            ctx.strokeStyle = this.color;
-            ctx.stroke();
-            return ctx.restore();
+        SIZE = {
+            MIN: 0.5,
+            MAX: 1.25
         };
-        return Particle;
-    }();
-    Sketch.create({
-        particles: [],
-        setup: function () {
-            var analyser, error, i, intro, j, particle, ref, warning, x, y;
-            for (i = j = 0, ref = NUM_PARTICLES - 1; j <= ref; i = j += 1) {
-                if (window.CP.shouldStopExecution(1)) {
-                    break;
+        COLORS = [
+            '#69D2E7',
+            '#1B676B',
+            '#BEF202',
+            '#EBE54D',
+            '#00CDAC',
+            '#1693A5',
+            '#F9D423',
+            '#FF4E50',
+            '#E7204E',
+            '#0CCABA',
+            '#FF006F'
+        ];
+        AudioAnalyser = function() {
+            AudioAnalyser.AudioContext = window.AudioContext // Default
+                || window.webkitAudioContext;
+            AudioAnalyser.enabled = AudioAnalyser.AudioContext != null;
+
+            function AudioAnalyser(audio, numBands, smoothing) {
+                var src;
+                this.audio = audio != null ? audio : new Audio();
+                this.numBands = numBands != null ? numBands : 256;
+                this.smoothing = smoothing != null ? smoothing : 0.3;
+                if (typeof this.audio === 'string') {
+                    src = this.audio;
+                    this.audio = new Audio();
+                    this.audio.crossOrigin = 'anonymous';
+                    this.audio.controls = true;
+                    this.audio.src = src;
                 }
-                x = random(this.width);
-                y = random(this.height * 2);
-                particle = new Particle(x, y);
-                particle.energy = random(particle.band / 256);
-                this.particles.push(particle);
-            }
-            window.CP.exitedLoop(1);
-            if (AudioAnalyser.enabled) {
-                try {
-                    analyser = new AudioAnalyser(MP3_PATH, NUM_BANDS, SMOOTHING);
-                    analyser.onUpdate = function (_this) {
-                        return function (bands) {
-                            var k, len, ref1, results;
-                            ref1 = _this.particles;
-                            results = [];
-                            for (k = 0, len = ref1.length; k < len; k++) {
-                                particle = ref1[k];
-                                results.push(particle.energy = bands[particle.band] / 256);
+                this.context = new AudioAnalyser.AudioContext();
+                this.jsNode = this.context.createScriptProcessor(2048, 1, 1);
+                this.analyser = this.context.createAnalyser();
+                this.analyser.smoothingTimeConstant = this.smoothing;
+                this.analyser.fftSize = this.numBands * 2;
+                this.bands = new Uint8Array(this.analyser.frequencyBinCount);
+                this.audio.addEventListener('canplay', function(_this) {
+                    return function() {
+                        _this.source = _this.context.createMediaElementSource(_this.audio);
+                        _this.source.connect(_this.analyser);
+                        _this.analyser.connect(_this.jsNode);
+                        _this.jsNode.connect(_this.context.destination);
+                        _this.source.connect(_this.context.destination);
+                        return _this.jsNode.onaudioprocess = function() {
+                            _this.analyser.getByteFrequencyData(_this.bands);
+                            if (!_this.audio.paused) {
+                                return typeof _this.onUpdate === 'function' ? _this.onUpdate(_this.bands) : void 0;
                             }
-                            return results;
                         };
-                    }(this);
-                    analyser.start();
-                    document.body.appendChild(analyser.audio);
-                    intro = document.getElementById('intro');
-                    intro.style.display = 'none';
-                    if (/Safari/.test(navigator.userAgent) && !/Chrome/.test(navigator.userAgent)) {
-                        warning = document.getElementById('warning2');
-                        return warning.style.display = 'block';
+                    };
+                }(this));
+            }
+            AudioAnalyser.prototype.start = function() {
+                return this.audio.play();
+            };
+            AudioAnalyser.prototype.stop = function() {
+                return this.audio.pause();
+            };
+            return AudioAnalyser;
+        }();
+        Particle = function() {
+            function Particle(x1, y1) {
+                this.x = x1 != null ? x1 : 0;
+                this.y = y1 != null ? y1 : 0;
+                this.reset();
+            }
+            Particle.prototype.reset = function() {
+                this.level = 1 + floor(random(4));
+                this.scale = random(SCALE.MIN, SCALE.MAX);
+                this.alpha = random(ALPHA.MIN, ALPHA.MAX);
+                this.speed = random(SPEED.MIN, SPEED.MAX);
+                this.color = random(COLORS);
+                this.size = random(SIZE.MIN, SIZE.MAX);
+                this.spin = random(SPIN.MAX, SPIN.MAX);
+                this.band = floor(random(NUM_BANDS));
+                if (random() < 0.5) {
+                    this.spin = -this.spin;
+                }
+                this.smoothedScale = 0;
+                this.smoothedAlpha = 0;
+                this.decayScale = 0;
+                this.decayAlpha = 0;
+                this.rotation = random(TWO_PI);
+                return this.energy = 0;
+            };
+            Particle.prototype.move = function() {
+                this.rotation += this.spin;
+                return this.y -= this.speed * this.level;
+            };
+            Particle.prototype.draw = function(ctx) {
+                var alpha, power, scale;
+                power = exp(this.energy);
+                scale = this.scale * power;
+                alpha = this.alpha * this.energy * 1.5;
+                this.decayScale = max(this.decayScale, scale);
+                this.decayAlpha = max(this.decayAlpha, alpha);
+                this.smoothedScale += (this.decayScale - this.smoothedScale) * 0.3;
+                this.smoothedAlpha += (this.decayAlpha - this.smoothedAlpha) * 0.3;
+                this.decayScale *= 0.985;
+                this.decayAlpha *= 0.975;
+                ctx.save();
+                ctx.beginPath();
+                ctx.translate(this.x + cos(this.rotation * this.speed) * 250, this.y);
+                ctx.rotate(this.rotation);
+                ctx.scale(this.smoothedScale * this.level, this.smoothedScale * this.level);
+                ctx.moveTo(this.size * 0.5, 0);
+                ctx.lineTo(this.size * -0.5, 0);
+                ctx.lineWidth = 1;
+                ctx.lineCap = 'round';
+                ctx.globalAlpha = this.smoothedAlpha / this.level;
+                ctx.strokeStyle = this.color;
+                ctx.stroke();
+                return ctx.restore();
+            };
+            return Particle;
+        }();
+        Sketch.create({
+            particles: [],
+            setup: function() {
+                var analyser, error, i, intro, j, particle, ref, warning, x, y;
+                for (i = j = 0, ref = NUM_PARTICLES - 1; j <= ref; i = j += 1) {
+                    if (window.CP.shouldStopExecution(1)) {
+                        break;
                     }
-                } catch (_error) {
-                    error = _error;
+                    x = random(this.width);
+                    y = random(this.height * 2);
+                    particle = new Particle(x, y);
+                    particle.energy = random(particle.band / 256);
+                    this.particles.push(particle);
                 }
-            } else {
-                warning = document.getElementById('warning1');
-                return warning.style.display = 'block';
+                window.CP.exitedLoop(1);
+                if (AudioAnalyser.enabled) {
+                    try {
+                        analyser = new AudioAnalyser(MP3_PATH, NUM_BANDS, SMOOTHING);
+                        analyser.onUpdate = function(_this) {
+                            return function(bands) {
+                                var k, len, ref1, results;
+                                ref1 = _this.particles;
+                                results = [];
+                                for (k = 0, len = ref1.length; k < len; k++) {
+                                    particle = ref1[k];
+                                    results.push(particle.energy = bands[particle.band] / 256);
+                                }
+                                return results;
+                            };
+                        }(this);
+                        analyser.start();
+                        document.body.appendChild(analyser.audio);
+                        intro = document.getElementById('intro');
+                        intro.style.display = 'none';
+                        if (/Safari/.test(navigator.userAgent) && !/Chrome/.test(navigator.userAgent)) {
+                            warning = document.getElementById('warning2');
+                            return warning.style.display = 'block';
+                        }
+                    } catch (_error) {
+                        error = _error;
+                    }
+                } else {
+                    warning = document.getElementById('warning1');
+                    return warning.style.display = 'block';
+                }
+            },
+            draw: function() {
+                var j, len, particle, ref, results;
+                this.globalCompositeOperation = 'lighter';
+                ref = this.particles;
+                results = [];
+                for (j = 0, len = ref.length; j < len; j++) {
+                    if (window.CP.shouldStopExecution(2)) {
+                        break;
+                    }
+                    particle = ref[j];
+                    if (particle.y < -particle.size * particle.level * particle.scale * 2) {
+                        particle.reset();
+                        particle.x = random(this.width);
+                        particle.y = this.height + particle.size * particle.scale * particle.level;
+                    }
+                    particle.move();
+                    results.push(particle.draw(this));
+                }
+                window.CP.exitedLoop(2);
+                return results;
             }
-        },
-        draw: function () {
-            var j, len, particle, ref, results;
-            this.globalCompositeOperation = 'lighter';
-            ref = this.particles;
-            results = [];
-            for (j = 0, len = ref.length; j < len; j++) {
-                if (window.CP.shouldStopExecution(2)) {
-                    break;
-                }
-                particle = ref[j];
-                if (particle.y < -particle.size * particle.level * particle.scale * 2) {
-                    particle.reset();
-                    particle.x = random(this.width);
-                    particle.y = this.height + particle.size * particle.scale * particle.level;
-                }
-                particle.move();
-                results.push(particle.draw(this));
-            }
-            window.CP.exitedLoop(2);
-            return results;
-        }
-    });
-}.call(this));
-//# sourceURL=pen.js
-</script><canvas id="paint-canvas" class=" sketch" height="588" width="800"></canvas><audio preload="auto" crossorigin="anonymous" controls="" src="" ></audio>
+        });
+    }.call(this));
+    //# sourceURL=pen.js
+    </script>
+    <canvas id="paint-canvas" class=" sketch" height="588" width="800"></canvas>
+    <audio preload="auto" crossorigin="anonymous" controls="" src=""></audio>
 </body>
-
 <script>
-// 	$(function(){
+//  $(function(){
 
 // var colors = new Array(
 //   [62,35,255],
@@ -415,7 +490,7 @@ audio {
 // {
 //   //console.log()
 //   if ( $===undefined ) return;
-  
+
 // var c0_0 = colors[colorIndices[0]];
 // var c0_1 = colors[colorIndices[1]];
 // var c1_0 = colors[colorIndices[2]];
@@ -435,22 +510,22 @@ audio {
 //  $('.main').css({
 //    background: "-webkit-gradient(linear, left top, right bottom, from("+color1+"), to("+color2+"))"}).css({
 //     background: "-moz-linear-gradient(left, "+color1+" 0%, "+color2+" 100%)"});
-  
+
 //   step += gradientSpeed;
 //   if ( step >= 1 )
 //   {
 //     step %= 1;
 //     colorIndices[0] = colorIndices[1];
 //     colorIndices[2] = colorIndices[3];
-    
+
 //     //pick two new target color indices
 //     //do not pick the same as the current one
 //     colorIndices[1] = ( colorIndices[1] + Math.floor( 1 + Math.random() * (colors.length - 1))) % colors.length;
 //     colorIndices[3] = ( colorIndices[3] + Math.floor( 1 + Math.random() * (colors.length - 1))) % colors.length;
-    
+
 //   }
 // }
 // console.log('here')
 // setInterval(updateGradient,10);
-// 	});
+//  });
 </script>
