@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>H-Young's Portfolio</title>
+    <title>H-Young</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='css/fonts.css' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/animate.css">
@@ -10,7 +10,6 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/beach.css">
     <link rel="stylesheet" type="text/css" href="css/bootflat.css">
-    
     <script src="js/jquery.min.js"></script>
     <script src="js/script.js"></script>
     <style>
@@ -79,7 +78,7 @@
     </style>
 </head>
 
-<body class="dark" >
+<body class="dark">
     <div class="nav-wrapper left-top hide">
         <div class="triangle"></div>
         <div class="label">
@@ -134,14 +133,13 @@
         <div class="nav-content">
             <div class="about">
                 <ul>
-                    <li class="hide">Hi! My name is H-Young</li>
-                    <li class="hide">I am a senior full stack
-                        <br/>software engineer based in Beijing</li>
-                    <li class="hide">I have a passion for solving
-                        <br/>complex problems by devising
-                        <br/>innovative and creative solutions</li>
-                    <li class="hide">When I am not programming I love
-                        <br/> dancing and playing the rap</li>
+                    <li class="hide">我叫H-Young!</li>
+                    <li class="hide">我是高级全栈工程师/架构师
+                        <br/>生活在北京</li>
+                    <li class="hide">我擅长解决棘手的探索性和创新性的问题
+                        <br/>同时我擅长服务架构设计</li>
+                    <li class="hide">在日常生活中，
+                        <br/> 我会去玩Hiphop, 国标舞, 曳步舞, Rap</li>
                     <!-- <li class="hide">
                         <a href="resume.pdf" download>
                             Click here to download my resume 
@@ -189,90 +187,163 @@
         <div class="overlay"></div>
         <!-- <div class="my-name">H-Young<br/>huangyan9188@gmail.com<br/></div> -->
         <div class="my-pic hide"></div>
-        <div class="hero" id="profile">
+        <div class="hero">
             <div class="creative">
-                {{greeting}}
+                H-Young
             </div>
-            <div  class="developer">
-                {{message}}
+            <div class="developer">
+                developer
             </div>
         </div>
         <div class="code">
         </div>
         <!-- <img src="images/arrow.png" class="hvr-bob arrow-down hidden"/> -->
     </div>
-    <div class="dark work" id="timeline">
+    <div class="dark work">
         <h1>Timeline</h1>
         <div class="col-md-12">
             <div class="timeline">
                 <dl>
-                    <template v-for="(item,index) in timeline">
-                        <dd class="pos-right clearfix"  v-if="index%2==0">
-                                <div class="circ"></div>
-                                <!-- <div class="time">Apr 14</div> -->
-                                <div class="events">
-                                    <div class="pull-left">
-        <!--                                 <img class="events-object img-rounded" src="img/photo-1.jpg"> -->
-                                    </div>
-                                    <div class="events-body">
-                                        <h4 class="events-heading">{{item.name}}</h4>
-                                        <p>{{item.describe}}</p>
-                                    </div>
-                                </div>
-                        </dd>
-                        <dd class="pos-left clearfix" v-if="index%2==1">
-                                    <div class="circ"></div>
-                                    <!-- <div class="time">Apr 14</div> -->
-                                    <div class="events">
-                                        <div class="pull-left">
-            <!--                                 <img class="events-object img-rounded" src="img/photo-1.jpg"> -->
-                                        </div>
-                                        <div class="events-body">
-                                            <h4 class="events-heading">{{item.name}}</h4>
-                                            <p>{{item.describe}}</p>
-                                        </div>
-                                    </div>
-                        </dd>
-                    </template>
                     <!-- <dt>Apr 2014</dt> -->
-                    
-                    
+                    <dd class="pos-right clearfix">
+                        <div class="circ"></div>
+                        <!-- <div class="time">Apr 14</div> -->
+                        <div class="events">
+                            <div class="pull-left">
+<!--                                 <img class="events-object img-rounded" src="img/photo-1.jpg"> -->
+                            </div>
+                            <div class="events-body">
+                                <h4 class="events-heading">Backbone Framework</h4>
+                                <p>Is the Framework for web based on components reusing style; Tools for building components, config components, and reusing components; Tools for github deployment and sofeware release; Tools for Testing</p>
+                            </div>
+                        </div>
+                    </dd>
+                    <dd class="pos-left clearfix">
+                        <div class="circ"></div>
+                        <!-- <div class="time">Apr 10</div> -->
+                        <div class="events">
+                            <div class="pull-left">
+                                <!-- <img class="events-object img-rounded" src="img/photo-2.jpg"> -->
+                            </div>
+                            <div class="events-body">
+                                <h4 class="events-heading">Monica</h4>
+                                <p>The Realtime Data Computing Framework, which is build on golang, c and lua; Streaming Modules can be configed to define the processing routine; SDK for Client; Scalable Architecture and library for detail needs;</p>
+                            </div>
+                        </div>
+                    </dd>
                     <!-- <dt>Mar 2014</dt> -->
-                    
+                    <dd class="pos-right clearfix">
+                        <div class="circ"></div>
+                        <!-- <div class="time">Mar 15</div> -->
+                        <div class="events">
+                            <div class="pull-left">
+                                <!-- <img class="events-object img-rounded" src="img/photo-3.jpg"> -->
+                            </div>
+                            <div class="events-body">
+                                <h4 class="events-heading">ADU</h4>
+                                <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica.</p>
+                            </div>
+                        </div>
+                    </dd>
+                    <dd class="pos-left clearfix">
+                        <div class="circ"></div>
+                        <!-- <div class="time">Mar 8</div> -->
+                        <div class="events">
+                            <div class="pull-left">
+                                <!-- <img class="events-object img-rounded" src="img/photo-4.jpg"> -->
+                            </div>
+                            <div class="events-body">
+                                <h4 class="events-heading">NSQBlend</h4>
+                                <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica.</p>
+                            </div>
+                        </div>
+                    </dd>
+                                        <dd class="pos-right clearfix">
+                        <div class="circ"></div>
+                        <!-- <div class="time">Mar 15</div> -->
+                        <div class="events">
+                            <div class="pull-left">
+                                <!-- <img class="events-object img-rounded" src="img/photo-3.jpg"> -->
+                            </div>
+                            <div class="events-body">
+                                <h4 class="events-heading">NSQElastic</h4>
+                                <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica.</p>
+                            </div>
+                        </div>
+                    </dd>
+                    <dd class="pos-left clearfix">
+                        <div class="circ"></div>
+                        <!-- <div class="time">Mar 8</div> -->
+                        <div class="events">
+                            <div class="pull-left">
+                                <!-- <img class="events-object img-rounded" src="img/photo-4.jpg"> -->
+                            </div>
+                            <div class="events-body">
+                                <h4 class="events-heading">LivingMap</h4>
+                                <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica.</p>
+                            </div>
+                        </div>
+                    </dd>
+                                        <dd class="pos-right clearfix">
+                        <div class="circ"></div>
+                        <!-- <div class="time">Mar 15</div> -->
+                        <div class="events">
+                            <div class="pull-left">
+                                <!-- <img class="events-object img-rounded" src="img/photo-3.jpg"> -->
+                            </div>
+                            <div class="events-body">
+                                <h4 class="events-heading">DeepV Realtime Client</h4>
+                                <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica.</p>
+                            </div>
+                        </div>
+                    </dd>
+                    <dd class="pos-left clearfix">
+                        <div class="circ"></div>
+                        <!-- <div class="time">Mar 8</div> -->
+                        <div class="events">
+                            <div class="pull-left">
+                                <!-- <img class="events-object img-rounded" src="img/photo-4.jpg"> -->
+                            </div>
+                            <div class="events-body">
+                                <h4 class="events-heading">Deepglint Website</h4>
+                                <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica.</p>
+                            </div>
+                        </div>
+                    </dd>
+                                        <dd class="pos-right clearfix">
+                        <div class="circ"></div>
+                        <!-- <div class="time">Mar 15</div> -->
+                        <div class="events">
+                            <div class="pull-left">
+                                <!-- <img class="events-object img-rounded" src="img/photo-3.jpg"> -->
+                            </div>
+                            <div class="events-body">
+                                <h4 class="events-heading">ADU</h4>
+                                <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica.</p>
+                            </div>
+                        </div>
+                    </dd>
+                    <dd class="pos-left clearfix">
+                        <div class="circ"></div>
+                        <!-- <div class="time">Mar 8</div> -->
+                        <div class="events">
+                            <div class="pull-left">
+                                <!-- <img class="events-object img-rounded" src="img/photo-4.jpg"> -->
+                            </div>
+                            <div class="events-body">
+                                <h4 class="events-heading">NSQBlend</h4>
+                                <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica.</p>
+                            </div>
+                        </div>
+                    </dd>
                 </dl>
             </div>
         </div>
     </div>
-    
-    <canvas id="paint-canvas" class=" sketch" height="588" width="800"></canvas>
-    <audio preload="auto" crossorigin="anonymous" controls="" src=""></audio>
-</body>
-<script src="https://cdn.jsdelivr.net/npm/vue"></script>
-<script src="js/me.js?t=1"></script>
-<script>
-    (
-        function(){
-            console.log(profile)
-            var profile_vue = new Vue({
-                el: '#profile',
-                data: profile
-            })
-            console.log(timeline)
-            var profile_vue = new Vue({
-                el: '#timeline',
-                data: {
-                    timeline:timeline
-                }
-            })
-        }
-    ).call(this);
-</script>
-<script src="js/stopExecutionOnTimeout.js?t=1"></script>
-<script src="http://soulwire.github.io/sketch.js/js/sketch.min.js"></script>
-
-<script>
+    <script src="http://assets.codepen.io/assets/common/stopExecutionOnTimeout.js?t=1"></script>
+    <script src="http://soulwire.github.io/sketch.js/js/sketch.min.js"></script>
+    <script>
     (function() {
-
         var ALPHA, AudioAnalyser, COLORS, MP3_PATH, NUM_BANDS, NUM_PARTICLES, Particle, SCALE, SIZE, SMOOTHING, SPEED, SPIN;
         NUM_PARTICLES = 150;
         NUM_BANDS = 128;
@@ -486,6 +557,9 @@
     }.call(this));
     //# sourceURL=pen.js
     </script>
+    <canvas id="paint-canvas" class=" sketch" height="588" width="800"></canvas>
+    <audio preload="auto" crossorigin="anonymous" controls="" src=""></audio>
+</body>
 <script>
  $(function(){
 
