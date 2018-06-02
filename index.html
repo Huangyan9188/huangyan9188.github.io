@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/beach.css">
     <link rel="stylesheet" type="text/css" href="css/bootflat.css">
-    
+    <meta charset="UTF-8">
     <script src="js/jquery.min.js"></script>
     <script src="js/script.js"></script>
     <style>
@@ -202,7 +202,7 @@
         <!-- <img src="images/arrow.png" class="hvr-bob arrow-down hidden"/> -->
     </div>
     <div class="dark work" id="timeline">
-        <h1>Timeline</h1>
+        <h1>工作时间线</h1>
         <div class="col-md-12">
             <div class="timeline">
                 <dl>
@@ -216,7 +216,7 @@
                                     </div>
                                     <div class="events-body">
                                         <h4 class="events-heading">{{item.name}}</h4>
-                                        <p>{{item.describe}}</p>
+                                        <p>{{item.describe}}</p><a :href="item.more" v-if="item.more != undefined" >More</a>
                                     </div>
                                 </div>
                         </dd>
@@ -229,7 +229,7 @@
                                         </div>
                                         <div class="events-body">
                                             <h4 class="events-heading">{{item.name}}</h4>
-                                            <p>{{item.describe}}</p>
+                                            <p>{{item.describe}}</p><a :href="item.more" v-if="item.more != undefined" >More</a>
                                         </div>
                                     </div>
                         </dd>
