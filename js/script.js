@@ -190,25 +190,29 @@ animateIntro = function animateIntro(){
 
 	    $('.creative').addClass('animated moveUp');
 	    $('.developer').addClass('animated moveDown');
-	}, 5000);
+	}, 3000);
 
 	setTimeout(function(){
 	    appendTextToCode("<br/>$('.my-pic').removeClass('hide').addClass('animated rotateInPic');");
 
-	    $('.my-pic').removeClass('hide').addClass('animated rotateInPic');  
-	}, 6000);
+		$('.my-pic').removeClass('hide').addClass('animated rotateInPic ');  
+		$('body').css('overflow','auto');//不让下滑
+		// setTimeout(function(){
+		// 	$('.my-pic').addClass('world'); 
+		// },3000);
+	}, 4000);
 
 
-	setTimeout(function(){
+	// setTimeout(function(){
 
-		$('.nav-wrapper.left-top').removeClass('hide').addClass('animated rotateInDownRight');
-		$('.nav-wrapper.right-top').removeClass('hide').addClass('animated rotateInDownLeft');
-		$('.nav-wrapper.right-bottom').removeClass('hide').addClass('animated rotateInUpLeft');
-		$('.nav-wrapper.left-bottom').removeClass('hide').addClass('animated rotateInUpRight');	
-		$('.arrow-down').removeClass('hidden');
-		$('body').css('overflow','auto');
+	// 	$('.nav-wrapper.left-top').removeClass('hide').addClass('animated rotateInDownRight');
+	// 	$('.nav-wrapper.right-top').removeClass('hide').addClass('animated rotateInDownLeft');
+	// 	$('.nav-wrapper.right-bottom').removeClass('hide').addClass('animated rotateInUpLeft');
+	// 	$('.nav-wrapper.left-bottom').removeClass('hide').addClass('animated rotateInUpRight');	
+	// 	$('.arrow-down').removeClass('hidden');
+	// 	$('body').css('overflow','auto');
 
-		appendTextToCode("$('.nav-wrapper.left-top').removeClass('hide').addClass('animated rotateInDownRight');<br/>$('.nav-wrapper.right-top').removeClass('hide').addClass('animated rotateInDownLeft');<br/>$('.nav-wrapper.right-bottom').removeClass('hide').addClass('animated rotateInUpLeft');<br/>$('.nav-wrapper.left-bottom').removeClass('hide').addClass('animated rotateInUpRight');");
+	// 	appendTextToCode("$('.nav-wrapper.left-top').removeClass('hide').addClass('animated rotateInDownRight');<br/>$('.nav-wrapper.right-top').removeClass('hide').addClass('animated rotateInDownLeft');<br/>$('.nav-wrapper.right-bottom').removeClass('hide').addClass('animated rotateInUpLeft');<br/>$('.nav-wrapper.left-bottom').removeClass('hide').addClass('animated rotateInUpRight');");
 		
-	}, 7000);
+	// }, 7000);
 }
