@@ -180,10 +180,13 @@ animateIntro = function animateIntro(){
 	animateItems($('.hero .creative span'), 'animated flipInX', function(){
 	    setTimeout(function(){
 	        appendTextToCode("animateItems($('.hero .developer span'), '')");
-	        animateItems($('.hero .developer span'), 'show');        
-	    }, 1000);  
+			animateItems($('.hero .developer span'), 'show');  
+			    
+		}, 1000);  
+		
+		
 	});
-
+	$('body').css('overflow','auto');//不让下滑  
 	setTimeout(function(){
 	    appendTextToCode("<br/>$('.creative').addClass('animated moveUp');");
 	    appendTextToCode("<br/>$('.developer').addClass('animated moveDown');");
@@ -196,7 +199,7 @@ animateIntro = function animateIntro(){
 	    appendTextToCode("<br/>$('.my-pic').removeClass('hide').addClass('animated rotateInPic');");
 
 		$('.my-pic').removeClass('hide').addClass('animated rotateInPic ');  
-		$('body').css('overflow','auto');//不让下滑
+		
 		// setTimeout(function(){
 		// 	$('.my-pic').addClass('world'); 
 		// },3000);
