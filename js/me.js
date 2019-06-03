@@ -4,18 +4,19 @@ profile={
 }
 timeline=[
     {
+        name:"DGNet 深瞳大脑, Project Owner , 格灵深瞳 , [2016.10.1-NOW]",
+        describe:"由大数据中心，机器学习平台，数据-模型自动化机器学习业务平台，标注平台，应用中心组成，打通数据-模型-应用的闭环",
+        more:"http://www.deepglint.com/skill?pageState=basicPlatform"
+    },
+    {
         name:"Trillion Pairs 人脸竞赛, Chief Support [Side Project] , 格灵深瞳 , [2018.1.1-NOW]",
         describe:"一个全新的人脸识别竞赛",
         more:"http://trillionpairs.deepglint.com/overview"
     },
     {
-        name:"LibraT, PGM/Architecture/Dev, 格灵深瞳 [2017.12.1-NOW]",
+        name:"LibraT, 研发负责人/架构师, 格灵深瞳 [2017.12.1-NOW]",
         describe:"基于3D摄像头，对视野范围内的人员进行识别，跟踪，跌倒，暴力，以及其他的行为分析。设备本身属于一体机，配有IOT平台，配置端以及监控端。",
         more:"http://www.deepglint.com/haomu"
-    },
-    {
-        name:"DGNet, PGM/Architecture/Dev, 格灵深瞳 [2016.12.1-NOW]",
-        describe:"由大数据中心，机器学习平台，数据-模型自动化机器学习业务平台，标注平台，应用中心组成，打通数据-模型-应用的闭环"
     },
     {
         name:"Backbone 全栈框架, Full-Stack Leader, 格灵深瞳 [2015.7.15-2016.11.31]",
